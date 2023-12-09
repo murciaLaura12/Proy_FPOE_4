@@ -30,7 +30,6 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
-        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
@@ -49,11 +48,13 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jTextField4 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1060, 440));
         getContentPane().setLayout(null);
 
         jTabbedPane1.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
@@ -68,7 +69,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(50, 30, 69, 21);
+        jRadioButton1.setBounds(50, 30, 80, 21);
 
         jRadioButton2.setText("Comprar");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -77,15 +78,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(220, 30, 70, 21);
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(140, 80, 210, 20);
+        jRadioButton2.setBounds(180, 30, 90, 21);
 
         jLabel1.setText("CÓDIGO:");
         jPanel1.add(jLabel1);
@@ -101,7 +94,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField2);
-        jTextField2.setBounds(140, 120, 210, 20);
+        jTextField2.setBounds(140, 70, 210, 28);
 
         jLabel3.setText("PROVEEDOR:");
         jPanel1.add(jLabel3);
@@ -113,23 +106,27 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(140, 160, 210, 20);
+        jComboBox1.setBounds(140, 150, 210, 30);
 
         jLabel5.setText("CANTIDAD:");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(50, 240, 70, 16);
+        jLabel5.setBounds(50, 250, 70, 16);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel1.add(jComboBox2);
-        jComboBox2.setBounds(140, 200, 210, 20);
+        jComboBox2.setBounds(140, 190, 210, 30);
         jPanel1.add(jSpinner1);
-        jSpinner1.setBounds(140, 240, 64, 22);
+        jSpinner1.setBounds(140, 240, 64, 30);
 
         jLabel6.setText("PRECIO:");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(230, 240, 60, 16);
+        jLabel6.setBounds(220, 250, 60, 16);
+
+        jTextField3.setEditable(false);
+        jTextField3.setMinimumSize(new java.awt.Dimension(64, 28));
+        jTextField3.setPreferredSize(new java.awt.Dimension(64, 28));
         jPanel1.add(jTextField3);
-        jTextField3.setBounds(280, 240, 64, 22);
+        jTextField3.setBounds(270, 240, 80, 30);
 
         jButton2.setText("Guardar");
         jPanel1.add(jButton2);
@@ -151,8 +148,22 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel1.add(jButton9);
         jButton9.setBounds(380, 290, 90, 23);
 
+        jScrollPane1.setBorder(null);
+
+        jTable1.setAutoCreateRowSorter(true);
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -173,16 +184,30 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jTable1.setAutoscrolls(false);
         jScrollPane1.setViewportView(jTable1);
         if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setMinWidth(60);
+            jTable1.getColumnModel().getColumn(0).setResizable(false);
             jTable1.getColumnModel().getColumn(0).setPreferredWidth(60);
-            jTable1.getColumnModel().getColumn(0).setMaxWidth(60);
+            jTable1.getColumnModel().getColumn(1).setResizable(false);
             jTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
+            jTable1.getColumnModel().getColumn(2).setResizable(false);
             jTable1.getColumnModel().getColumn(2).setPreferredWidth(100);
+            jTable1.getColumnModel().getColumn(3).setResizable(false);
+            jTable1.getColumnModel().getColumn(3).setPreferredWidth(100);
+            jTable1.getColumnModel().getColumn(4).setResizable(false);
             jTable1.getColumnModel().getColumn(4).setPreferredWidth(60);
+            jTable1.getColumnModel().getColumn(5).setResizable(false);
+            jTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
         }
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(390, 30, 620, 230);
+        jScrollPane1.setBounds(370, 30, 650, 240);
+
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField4);
+        jTextField4.setBounds(140, 110, 210, 28);
 
         jTabbedPane1.addTab("PRODUCTOS", jPanel1);
 
@@ -190,7 +215,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1020, Short.MAX_VALUE)
+            .addGap(0, 1070, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -203,7 +228,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1020, Short.MAX_VALUE)
+            .addGap(0, 1070, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -216,7 +241,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1020, Short.MAX_VALUE)
+            .addGap(0, 1070, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -226,7 +251,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jTabbedPane1.addTab("VENTAS", jPanel4);
 
         getContentPane().add(jTabbedPane1);
-        jTabbedPane1.setBounds(10, 10, 1020, 370);
+        jTabbedPane1.setBounds(10, 10, 1070, 370);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -239,13 +264,13 @@ public class VistaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -306,8 +331,8 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 }
