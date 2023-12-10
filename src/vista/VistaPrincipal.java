@@ -28,6 +28,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
+
         jLabel3 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
@@ -66,6 +67,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jButton13 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
 
@@ -77,6 +79,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jPanel1.setLayout(null);
+
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
         jLabel3.setText("Inventario de Productos");
@@ -171,45 +174,52 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         jRadioButton3.setText("Registrar");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jRadioButton3);
-        jRadioButton3.setBounds(50, 30, 80, 21);
 
-        jRadioButton4.setText("Comprar");
-        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton4ActionPerformed(evt);
+                jRadioButton1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jRadioButton4);
-        jRadioButton4.setBounds(180, 30, 90, 21);
+        jPanel1.add(jRadioButton1);
+        jRadioButton1.setBounds(50, 30, 80, 21);
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        jRadioButton2.setText("Comprar");
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                jRadioButton2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField5);
-        jTextField5.setBounds(140, 70, 210, 28);
+        jPanel1.add(jRadioButton2);
+        jRadioButton2.setBounds(180, 30, 90, 21);
+
+        jLabel1.setText("CÓDIGO:");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(50, 80, 60, 16);
+
+        jLabel2.setText("NOMBRE:");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(50, 120, 60, 16);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField2);
+        jTextField2.setBounds(140, 70, 210, 28);
+
 
         jLabel7.setText("CÓDIGO:");
         jPanel3.add(jLabel7);
         jLabel7.setBounds(50, 80, 60, 16);
 
-        jLabel8.setText("NOMBRE:");
-        jPanel3.add(jLabel8);
-        jLabel8.setBounds(50, 120, 60, 16);
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jTextField6);
-        jTextField6.setBounds(140, 110, 210, 28);
+        jLabel4.setText("PRODUCTO:");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(50, 200, 90, 16);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel1.add(jComboBox1);
+        jComboBox1.setBounds(140, 150, 210, 30);
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel3.add(jComboBox3);
@@ -267,6 +277,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         jTable2.setAutoCreateRowSorter(true);
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
+
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -296,6 +307,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+
         jTable2.setAutoscrolls(false);
         jScrollPane2.setViewportView(jTable2);
         if (jTable2.getColumnModel().getColumnCount() > 0) {
@@ -315,6 +327,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         jPanel3.add(jScrollPane2);
         jScrollPane2.setBounds(370, 30, 650, 240);
+
 
         jTabbedPane1.addTab("PROVEEDORES", jPanel3);
 
@@ -350,20 +363,25 @@ public class VistaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton3ActionPerformed
 
     private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton4ActionPerformed
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+
     }//GEN-LAST:event_jTextField6ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -373,6 +391,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField8ActionPerformed
+
 
     /**
      * @param args the command line arguments
@@ -410,6 +429,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
@@ -431,10 +451,12 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JScrollPane jScrollPane1;
@@ -448,5 +470,6 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTable tablaProductos;
+
     // End of variables declaration//GEN-END:variables
 }
