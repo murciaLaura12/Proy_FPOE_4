@@ -53,24 +53,53 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox<>();
         jLabel13 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox<>();
         jSpinner1 = new javax.swing.JSpinner();
         jTextField4 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jTextField5 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jButton17 = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        jTextField10 = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        jComboBox4 = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jRadioButton5 = new javax.swing.JRadioButton();
+        jLabel11 = new javax.swing.JLabel();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jComboBox6 = new javax.swing.JComboBox<>();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jSpinner2 = new javax.swing.JSpinner();
+        jLabel16 = new javax.swing.JLabel();
+        jTextField9 = new javax.swing.JTextField();
+        jButton10 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
+        jSeparator1 = new javax.swing.JSeparator();
         jPanel4 = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        jComboBox7 = new javax.swing.JComboBox<>();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1060, 440));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jTabbedPane1.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
@@ -176,7 +205,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jRadioButton3);
-        jRadioButton3.setBounds(50, 30, 80, 21);
+        jRadioButton3.setBounds(50, 10, 80, 21);
 
         jRadioButton2.setText("Comprar");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -185,15 +214,15 @@ public class VistaPrincipal extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jRadioButton2);
-        jRadioButton2.setBounds(180, 30, 90, 21);
+        jRadioButton2.setBounds(180, 10, 90, 21);
 
-        jLabel1.setText("CÓDIGO:");
+        jLabel1.setText("NOMBRE:");
         jPanel3.add(jLabel1);
-        jLabel1.setBounds(50, 80, 60, 16);
+        jLabel1.setBounds(50, 50, 60, 16);
 
-        jLabel8.setText("NOMBRE:");
+        jLabel8.setText("TELEFONO:");
         jPanel3.add(jLabel8);
-        jLabel8.setBounds(50, 120, 60, 16);
+        jLabel8.setBounds(50, 90, 60, 16);
 
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,27 +230,22 @@ public class VistaPrincipal extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jTextField3);
-        jTextField3.setBounds(140, 70, 210, 28);
+        jTextField3.setBounds(140, 40, 210, 28);
 
         jLabel4.setText("PRODUCTO:");
         jPanel3.add(jLabel4);
-        jLabel4.setBounds(50, 200, 90, 16);
+        jLabel4.setBounds(50, 130, 90, 16);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel3.add(jComboBox2);
-        jComboBox2.setBounds(140, 150, 210, 30);
+        jComboBox2.setBounds(140, 160, 210, 30);
 
         jLabel13.setText("CANTIDAD:");
         jPanel3.add(jLabel13);
-        jLabel13.setBounds(50, 250, 70, 16);
-
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel3.add(jComboBox5);
-        jComboBox5.setBounds(140, 190, 210, 30);
+        jLabel13.setBounds(50, 250, 70, 20);
         jPanel3.add(jSpinner1);
-        jSpinner1.setBounds(130, 240, 70, 22);
+        jSpinner1.setBounds(140, 240, 70, 30);
 
-        jTextField4.setEditable(false);
         jTextField4.setMinimumSize(new java.awt.Dimension(64, 28));
         jTextField4.setPreferredSize(new java.awt.Dimension(64, 28));
         jPanel3.add(jTextField4);
@@ -235,49 +259,46 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel3.add(jButton3);
         jButton3.setBounds(30, 290, 90, 23);
 
-        jButton6.setText("Listar");
+        jButton6.setText("Modificar");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jButton6);
-        jButton6.setBounds(140, 290, 90, 23);
-
-        jButton7.setText("Listar");
-        jPanel3.add(jButton7);
-        jButton7.setBounds(260, 290, 90, 23);
-
-        jButton14.setText("Actualizar");
-        jPanel3.add(jButton14);
-        jButton14.setBounds(380, 290, 90, 23);
+        jButton6.setBounds(150, 290, 90, 23);
 
         jButton15.setText("Borrar");
         jPanel3.add(jButton15);
-        jButton15.setBounds(380, 290, 90, 23);
+        jButton15.setBounds(270, 290, 90, 23);
 
         jScrollPane3.setBorder(null);
 
         jTable2.setAutoCreateRowSorter(true);
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "CÓDIGO", "NOMBRE", "PROVEEDOR", "PRODUCTO", "CANTIDAD", "TOTAL"
+                "NOMBRE", "PROVEEDOR", "PRODUCTO", "CANTIDAD", "TOTAL"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
+                false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -288,21 +309,22 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTable2);
         if (jTable2.getColumnModel().getColumnCount() > 0) {
             jTable2.getColumnModel().getColumn(0).setResizable(false);
-            jTable2.getColumnModel().getColumn(0).setPreferredWidth(60);
+            jTable2.getColumnModel().getColumn(0).setPreferredWidth(100);
+            jTable2.getColumnModel().getColumn(0).setHeaderValue("VENTA");
             jTable2.getColumnModel().getColumn(1).setResizable(false);
             jTable2.getColumnModel().getColumn(1).setPreferredWidth(100);
+            jTable2.getColumnModel().getColumn(1).setHeaderValue("TELÉFONO");
             jTable2.getColumnModel().getColumn(2).setResizable(false);
             jTable2.getColumnModel().getColumn(2).setPreferredWidth(100);
+            jTable2.getColumnModel().getColumn(2).setHeaderValue("CANTIDAD");
             jTable2.getColumnModel().getColumn(3).setResizable(false);
-            jTable2.getColumnModel().getColumn(3).setPreferredWidth(100);
+            jTable2.getColumnModel().getColumn(3).setPreferredWidth(60);
             jTable2.getColumnModel().getColumn(4).setResizable(false);
-            jTable2.getColumnModel().getColumn(4).setPreferredWidth(60);
-            jTable2.getColumnModel().getColumn(5).setResizable(false);
-            jTable2.getColumnModel().getColumn(5).setPreferredWidth(100);
+            jTable2.getColumnModel().getColumn(4).setPreferredWidth(100);
         }
 
         jPanel3.add(jScrollPane3);
-        jScrollPane3.setBounds(370, 30, 650, 240);
+        jScrollPane3.setBounds(390, 30, 650, 240);
 
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -310,42 +332,298 @@ public class VistaPrincipal extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jTextField5);
-        jTextField5.setBounds(140, 110, 210, 28);
+        jTextField5.setBounds(140, 80, 210, 28);
 
-        jLabel7.setText("PROVEEDOR:");
-        jPanel3.add(jLabel7);
-        jLabel7.setBounds(50, 150, 90, 30);
+        jButton17.setText("Comprar");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton17);
+        jButton17.setBounds(390, 290, 90, 23);
+
+        jLabel17.setText("CATEGORÍA:");
+        jPanel3.add(jLabel17);
+        jLabel17.setBounds(50, 170, 90, 16);
+
+        jTextField10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField10jTextField2ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jTextField10);
+        jTextField10.setBounds(140, 120, 210, 28);
+
+        jLabel18.setText("ELEGIR PDCTO:");
+        jPanel3.add(jLabel18);
+        jLabel18.setBounds(50, 210, 100, 16);
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel3.add(jComboBox4);
+        jComboBox4.setBounds(140, 200, 210, 30);
 
         jTabbedPane1.addTab("PROVEEDORES", jPanel3);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1070, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 335, Short.MAX_VALUE)
-        );
+        jPanel2.setLayout(null);
+
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6jTextField2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jTextField6);
+        jTextField6.setBounds(140, 80, 210, 28);
+
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField7jTextField2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jTextField7);
+        jTextField7.setBounds(140, 40, 210, 28);
+
+        jLabel9.setText("NOMBRE:");
+        jPanel2.add(jLabel9);
+        jLabel9.setBounds(50, 90, 60, 16);
+
+        jLabel10.setText("CÉDULA:");
+        jPanel2.add(jLabel10);
+        jLabel10.setBounds(50, 50, 60, 16);
+
+        jRadioButton4.setText("Registrar");
+        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton4jRadioButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jRadioButton4);
+        jRadioButton4.setBounds(50, 10, 80, 21);
+
+        jRadioButton5.setText("Vender");
+        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton5ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jRadioButton5);
+        jRadioButton5.setBounds(180, 10, 90, 21);
+
+        jLabel11.setText("PROVEEDOR:");
+        jPanel2.add(jLabel11);
+        jLabel11.setBounds(50, 160, 90, 30);
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel2.add(jComboBox3);
+        jComboBox3.setBounds(140, 160, 210, 30);
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel2.add(jComboBox6);
+        jComboBox6.setBounds(140, 200, 210, 30);
+
+        jLabel14.setText("PRODUCTO:");
+        jPanel2.add(jLabel14);
+        jLabel14.setBounds(50, 210, 90, 16);
+
+        jLabel15.setText("CANTIDAD:");
+        jPanel2.add(jLabel15);
+        jLabel15.setBounds(50, 250, 70, 16);
+        jPanel2.add(jSpinner2);
+        jSpinner2.setBounds(140, 240, 70, 30);
+
+        jLabel16.setText("PRECIO:");
+        jPanel2.add(jLabel16);
+        jLabel16.setBounds(220, 250, 60, 16);
+
+        jTextField9.setEditable(false);
+        jTextField9.setMinimumSize(new java.awt.Dimension(64, 28));
+        jTextField9.setPreferredSize(new java.awt.Dimension(64, 28));
+        jPanel2.add(jTextField9);
+        jTextField9.setBounds(270, 240, 80, 30);
+
+        jButton10.setText("Vender");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton10);
+        jButton10.setBounds(390, 310, 90, 23);
+
+        jButton4.setText("Guardar");
+        jPanel2.add(jButton4);
+        jButton4.setBounds(30, 310, 90, 23);
+
+        jButton11.setText("Borrar");
+        jPanel2.add(jButton11);
+        jButton11.setBounds(270, 310, 90, 23);
+
+        jButton16.setText("Actualizar");
+        jPanel2.add(jButton16);
+        jButton16.setBounds(150, 310, 90, 23);
+
+        jScrollPane4.setBorder(null);
+
+        jTable3.setAutoCreateRowSorter(true);
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "CÉDULA", "NOMBRE"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable3.setAutoscrolls(false);
+        jScrollPane4.setViewportView(jTable3);
+        if (jTable3.getColumnModel().getColumnCount() > 0) {
+            jTable3.getColumnModel().getColumn(0).setResizable(false);
+            jTable3.getColumnModel().getColumn(0).setPreferredWidth(60);
+            jTable3.getColumnModel().getColumn(1).setResizable(false);
+            jTable3.getColumnModel().getColumn(1).setPreferredWidth(100);
+            jTable3.getColumnModel().getColumn(1).setHeaderValue("VENTA");
+        }
+
+        jPanel2.add(jScrollPane4);
+        jScrollPane4.setBounds(390, 30, 650, 120);
+
+        jScrollPane5.setBorder(null);
+
+        jTable4.setAutoCreateRowSorter(true);
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "CÉDULA", "NOMBRE", "PRODUCTO", "CANTIDAD", "TOTAL"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable4.setAutoscrolls(false);
+        jScrollPane5.setViewportView(jTable4);
+        if (jTable4.getColumnModel().getColumnCount() > 0) {
+            jTable4.getColumnModel().getColumn(0).setResizable(false);
+            jTable4.getColumnModel().getColumn(0).setPreferredWidth(60);
+            jTable4.getColumnModel().getColumn(1).setResizable(false);
+            jTable4.getColumnModel().getColumn(1).setPreferredWidth(100);
+            jTable4.getColumnModel().getColumn(1).setHeaderValue("VENTA");
+            jTable4.getColumnModel().getColumn(2).setResizable(false);
+            jTable4.getColumnModel().getColumn(2).setPreferredWidth(100);
+            jTable4.getColumnModel().getColumn(2).setHeaderValue("CANTIDAD");
+            jTable4.getColumnModel().getColumn(3).setResizable(false);
+            jTable4.getColumnModel().getColumn(3).setPreferredWidth(60);
+            jTable4.getColumnModel().getColumn(4).setResizable(false);
+            jTable4.getColumnModel().getColumn(4).setPreferredWidth(100);
+        }
+
+        jPanel2.add(jScrollPane5);
+        jScrollPane5.setBounds(390, 170, 650, 120);
+        jPanel2.add(jSeparator1);
+        jSeparator1.setBounds(370, 160, 690, 20);
 
         jTabbedPane1.addTab("CLIENTES", jPanel2);
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1070, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 335, Short.MAX_VALUE)
-        );
+        jPanel4.setLayout(null);
+
+        jLabel20.setText("CLIENTE:");
+        jPanel4.add(jLabel20);
+        jLabel20.setBounds(30, 30, 90, 16);
+
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel4.add(jComboBox7);
+        jComboBox7.setBounds(120, 20, 210, 30);
+
+        jScrollPane6.setBorder(null);
+
+        jTable5.setAutoCreateRowSorter(true);
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "NOMBRE", "TOTAL"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable5.setAutoscrolls(false);
+        jScrollPane6.setViewportView(jTable5);
+        if (jTable5.getColumnModel().getColumnCount() > 0) {
+            jTable5.getColumnModel().getColumn(0).setResizable(false);
+            jTable5.getColumnModel().getColumn(0).setPreferredWidth(60);
+            jTable5.getColumnModel().getColumn(1).setResizable(false);
+            jTable5.getColumnModel().getColumn(1).setPreferredWidth(100);
+        }
+
+        jPanel4.add(jScrollPane6);
+        jScrollPane6.setBounds(30, 80, 910, 220);
 
         jTabbedPane1.addTab("VENTAS", jPanel4);
 
         getContentPane().add(jTabbedPane1);
-        jTabbedPane1.setBounds(10, 10, 1070, 370);
+        jTabbedPane1.setBounds(10, 10, 1070, 380);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -382,6 +660,38 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private void jTextField5jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5jTextField2ActionPerformed
+
+    private void jTextField6jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6jTextField2ActionPerformed
+
+    private void jTextField7jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField7jTextField2ActionPerformed
+
+    private void jRadioButton4jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton4jRadioButton1ActionPerformed
+
+    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jTextField10jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField10jTextField2ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
 
 
     /**
@@ -420,43 +730,71 @@ public class VistaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox6;
+    private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinner2;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
+    private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JTable tablaProductos;
     // End of variables declaration//GEN-END:variables
 }
