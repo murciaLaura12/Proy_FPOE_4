@@ -98,6 +98,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jTable5 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1060, 440));
         setPreferredSize(new java.awt.Dimension(1060, 440));
         setResizable(false);
         getContentPane().setLayout(null);
