@@ -70,7 +70,9 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1060, 440));
         setPreferredSize(new java.awt.Dimension(1060, 440));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jTabbedPane1.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
