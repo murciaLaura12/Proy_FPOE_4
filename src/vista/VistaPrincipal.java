@@ -65,6 +65,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jTextField5 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
 
@@ -311,6 +312,10 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel3.add(jTextField5);
         jTextField5.setBounds(140, 110, 210, 28);
 
+        jLabel7.setText("PROVEEDOR:");
+        jPanel3.add(jLabel7);
+        jLabel7.setBounds(50, 150, 90, 30);
+
         jTabbedPane1.addTab("PROVEEDORES", jPanel3);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -434,6 +439,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
