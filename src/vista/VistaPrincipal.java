@@ -28,28 +28,28 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel5 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jSpinner1 = new javax.swing.JSpinner();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jTextField4 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jLabel11 = new javax.swing.JLabel();
+        jSpinner2 = new javax.swing.JSpinner();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
 
@@ -61,97 +61,108 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jPanel1.setLayout(null);
+        jTabbedPane1.addTab("PRODUCTOS", jPanel1);
 
-        jRadioButton1.setText("Registrar");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        jPanel3.setLayout(null);
+
+        jRadioButton3.setText("Registrar");
+        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                jRadioButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(50, 30, 80, 21);
+        jPanel3.add(jRadioButton3);
+        jRadioButton3.setBounds(50, 30, 80, 21);
 
-        jRadioButton2.setText("Comprar");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        jRadioButton4.setText("Comprar");
+        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                jRadioButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(180, 30, 90, 21);
+        jPanel3.add(jRadioButton4);
+        jRadioButton4.setBounds(180, 30, 90, 21);
 
-        jLabel1.setText("CÓDIGO:");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(50, 80, 60, 16);
-
-        jLabel2.setText("NOMBRE:");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(50, 120, 60, 16);
-
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jTextField5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField2);
-        jTextField2.setBounds(140, 70, 210, 28);
+        jPanel3.add(jTextField5);
+        jTextField5.setBounds(140, 70, 210, 28);
 
-        jLabel3.setText("PROVEEDOR:");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(50, 160, 80, 16);
+        jLabel7.setText("CÓDIGO:");
+        jPanel3.add(jLabel7);
+        jLabel7.setBounds(50, 80, 60, 16);
 
-        jLabel4.setText("PRODUCTO:");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(50, 200, 90, 16);
+        jLabel8.setText("NOMBRE:");
+        jPanel3.add(jLabel8);
+        jLabel8.setBounds(50, 120, 60, 16);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(140, 150, 210, 30);
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jTextField6);
+        jTextField6.setBounds(140, 110, 210, 28);
 
-        jLabel5.setText("CANTIDAD:");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(50, 250, 70, 16);
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel3.add(jComboBox3);
+        jComboBox3.setBounds(140, 150, 210, 30);
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel1.add(jComboBox2);
-        jComboBox2.setBounds(140, 190, 210, 30);
-        jPanel1.add(jSpinner1);
-        jSpinner1.setBounds(140, 240, 64, 30);
+        jLabel9.setText("PROVEEDOR:");
+        jPanel3.add(jLabel9);
+        jLabel9.setBounds(50, 160, 80, 16);
 
-        jLabel6.setText("PRECIO:");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(220, 250, 60, 16);
+        jLabel10.setText("PRODUCTO:");
+        jPanel3.add(jLabel10);
+        jLabel10.setBounds(50, 200, 90, 16);
 
-        jTextField3.setEditable(false);
-        jTextField3.setMinimumSize(new java.awt.Dimension(64, 28));
-        jTextField3.setPreferredSize(new java.awt.Dimension(64, 28));
-        jPanel1.add(jTextField3);
-        jTextField3.setBounds(270, 240, 80, 30);
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel3.add(jComboBox4);
+        jComboBox4.setBounds(140, 190, 210, 30);
 
-        jButton2.setText("Guardar");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(30, 290, 90, 23);
+        jLabel11.setText("CANTIDAD:");
+        jPanel3.add(jLabel11);
+        jLabel11.setBounds(50, 250, 70, 16);
+        jPanel3.add(jSpinner2);
+        jSpinner2.setBounds(140, 240, 64, 30);
 
-        jButton6.setText("Listar");
-        jPanel1.add(jButton6);
-        jButton6.setBounds(260, 290, 90, 23);
+        jTextField7.setEditable(false);
+        jTextField7.setMinimumSize(new java.awt.Dimension(64, 28));
+        jTextField7.setPreferredSize(new java.awt.Dimension(64, 28));
+        jPanel3.add(jTextField7);
+        jTextField7.setBounds(270, 240, 80, 30);
 
-        jButton7.setText("Comprar");
-        jPanel1.add(jButton7);
-        jButton7.setBounds(500, 290, 90, 23);
+        jLabel12.setText("PRECIO:");
+        jPanel3.add(jLabel12);
+        jLabel12.setBounds(220, 250, 60, 16);
 
-        jButton8.setText("Actualizar");
-        jPanel1.add(jButton8);
-        jButton8.setBounds(140, 290, 90, 23);
+        jButton3.setText("Guardar");
+        jPanel3.add(jButton3);
+        jButton3.setBounds(30, 290, 90, 23);
 
-        jButton9.setText("Borrar");
-        jPanel1.add(jButton9);
-        jButton9.setBounds(380, 290, 90, 23);
+        jButton10.setText("Actualizar");
+        jPanel3.add(jButton10);
+        jButton10.setBounds(140, 290, 90, 23);
 
-        jScrollPane1.setBorder(null);
+        jButton11.setText("Listar");
+        jPanel3.add(jButton11);
+        jButton11.setBounds(260, 290, 90, 23);
 
-        jTable1.setAutoCreateRowSorter(true);
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jButton12.setText("Borrar");
+        jPanel3.add(jButton12);
+        jButton12.setBounds(380, 290, 90, 23);
+
+        jButton13.setText("Comprar");
+        jPanel3.add(jButton13);
+        jButton13.setBounds(500, 290, 90, 23);
+
+        jScrollPane2.setBorder(null);
+
+        jTable2.setAutoCreateRowSorter(true);
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -181,46 +192,25 @@ public class VistaPrincipal extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable1.setAutoscrolls(false);
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
-            jTable1.getColumnModel().getColumn(0).setPreferredWidth(60);
-            jTable1.getColumnModel().getColumn(1).setResizable(false);
-            jTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
-            jTable1.getColumnModel().getColumn(2).setResizable(false);
-            jTable1.getColumnModel().getColumn(2).setPreferredWidth(100);
-            jTable1.getColumnModel().getColumn(3).setResizable(false);
-            jTable1.getColumnModel().getColumn(3).setPreferredWidth(100);
-            jTable1.getColumnModel().getColumn(4).setResizable(false);
-            jTable1.getColumnModel().getColumn(4).setPreferredWidth(60);
-            jTable1.getColumnModel().getColumn(5).setResizable(false);
-            jTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
+        jTable2.setAutoscrolls(false);
+        jScrollPane2.setViewportView(jTable2);
+        if (jTable2.getColumnModel().getColumnCount() > 0) {
+            jTable2.getColumnModel().getColumn(0).setResizable(false);
+            jTable2.getColumnModel().getColumn(0).setPreferredWidth(60);
+            jTable2.getColumnModel().getColumn(1).setResizable(false);
+            jTable2.getColumnModel().getColumn(1).setPreferredWidth(100);
+            jTable2.getColumnModel().getColumn(2).setResizable(false);
+            jTable2.getColumnModel().getColumn(2).setPreferredWidth(100);
+            jTable2.getColumnModel().getColumn(3).setResizable(false);
+            jTable2.getColumnModel().getColumn(3).setPreferredWidth(100);
+            jTable2.getColumnModel().getColumn(4).setResizable(false);
+            jTable2.getColumnModel().getColumn(4).setPreferredWidth(60);
+            jTable2.getColumnModel().getColumn(5).setResizable(false);
+            jTable2.getColumnModel().getColumn(5).setPreferredWidth(100);
         }
 
-        jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(370, 30, 650, 240);
-
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextField4);
-        jTextField4.setBounds(140, 110, 210, 28);
-
-        jTabbedPane1.addTab("PRODUCTOS", jPanel1);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1070, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 335, Short.MAX_VALUE)
-        );
+        jPanel3.add(jScrollPane2);
+        jScrollPane2.setBounds(370, 30, 650, 240);
 
         jTabbedPane1.addTab("PROVEEDORES", jPanel3);
 
@@ -256,21 +246,21 @@ public class VistaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_jRadioButton3ActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    }//GEN-LAST:event_jRadioButton4ActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_jTextField5ActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_jTextField6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -308,31 +298,31 @@ public class VistaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JSpinner jSpinner2;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables
 }
