@@ -5,6 +5,7 @@
 package vista;
 
 import java.awt.event.ActionListener;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -15,8 +16,14 @@ public class VistaPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form VistaPrincipal
      */
+    
+    
+
+    DefaultTableModel modelProduct;
+
     public VistaPrincipal() {
         initComponents();
+        modelProduct = (DefaultTableModel) tablaProductos.getModel(); 
         setLocationRelativeTo(null);
     }
     
