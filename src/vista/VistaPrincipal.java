@@ -4,6 +4,9 @@
  */
 package vista;
 
+import java.awt.event.ActionListener;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author LEONARDO
@@ -13,9 +16,33 @@ public class VistaPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form VistaPrincipal
      */
+    
+    
+
+    DefaultTableModel modelProduct;
+
     public VistaPrincipal() {
         initComponents();
+        modelProduct = (DefaultTableModel) tablaProductos.getModel(); 
+        setLocationRelativeTo(null);
     }
+    
+    public void addBtnAgregarProductListener(ActionListener listenControllers)
+    {
+        BtnAgregarProduct.addActionListener(listenControllers);
+    }  
+      
+    public void addBtnModificarProductListener(ActionListener listenControllers)
+    {
+        BtnModificarProduct.addActionListener(listenControllers);
+    }  
+
+    public void addBtnBorrarProductListener(ActionListener listenControllers)
+    {
+        BtnBorrarProduct.addActionListener(listenControllers);
+    }  
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -41,9 +68,9 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        BtnAgregarProduct = new javax.swing.JButton();
+        BtnModificarProduct = new javax.swing.JButton();
+        BtnBorrarProduct = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jRadioButton3 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
@@ -99,7 +126,6 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1060, 440));
-        setPreferredSize(new java.awt.Dimension(1060, 440));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -168,6 +194,11 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jScrollPane1.setBounds(370, 30, 650, 240);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Despensa", "Lácteos", "Enlatados", "Cárnicos", "Frutas y verduras", "Delicatessen", "Licores", "Bebidas", "Snacks", "Limpieza", "Cuidado Personal", "Panadería" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jComboBox1);
         jComboBox1.setBounds(140, 160, 130, 30);
 
@@ -183,17 +214,27 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel1.add(jLabel6);
         jLabel6.setBounds(50, 120, 60, 16);
 
-        jButton2.setText("Agregar");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(50, 220, 90, 23);
+        BtnAgregarProduct.setText("Agregar");
+        BtnAgregarProduct.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnAgregarProductActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BtnAgregarProduct);
+        BtnAgregarProduct.setBounds(50, 220, 90, 23);
 
-        jButton8.setText("Modificar");
-        jPanel1.add(jButton8);
-        jButton8.setBounds(160, 220, 90, 23);
+        BtnModificarProduct.setText("Modificar");
+        jPanel1.add(BtnModificarProduct);
+        BtnModificarProduct.setBounds(160, 220, 90, 23);
 
-        jButton9.setText("Borrar");
-        jPanel1.add(jButton9);
-        jButton9.setBounds(270, 220, 90, 23);
+        BtnBorrarProduct.setText("Borrar");
+        BtnBorrarProduct.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnBorrarProductActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BtnBorrarProduct);
+        BtnBorrarProduct.setBounds(270, 220, 90, 23);
 
         jTabbedPane1.addTab("PRODUCTOS", jPanel1);
 
@@ -410,7 +451,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel2.add(jRadioButton5);
         jRadioButton5.setBounds(180, 10, 90, 21);
 
-        jLabel11.setText("PROVEEDOR:");
+        jLabel11.setText("CATEGORIA");
         jPanel2.add(jLabel11);
         jLabel11.setBounds(50, 160, 90, 30);
 
@@ -694,6 +735,22 @@ public class VistaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
 
+    private void BtnAgregarProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAgregarProductActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnAgregarProductActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void BtnBorrarProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBorrarProductActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnBorrarProductActionPerformed
+
 
     /**
      * @param args the command line arguments
@@ -731,17 +788,17 @@ public class VistaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnAgregarProduct;
+    private javax.swing.JButton BtnBorrarProduct;
+    private javax.swing.JButton BtnModificarProduct;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
